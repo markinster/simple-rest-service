@@ -3,16 +3,16 @@ package com.markinster.services.models;
 public class Color {
 
 	private String id;
-	private String nome;
+	private String name;
 
 	public Color() {
 
 	}
 
-	public Color(String id, String nome) {
+	public Color(String id, String name) {
 		super();
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 	}
 
 	public String getId() {
@@ -23,12 +23,12 @@ public class Color {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String name) {
+		this.name = name;
 	}
 
 }

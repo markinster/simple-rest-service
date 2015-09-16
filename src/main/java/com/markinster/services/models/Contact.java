@@ -3,45 +3,46 @@ package com.markinster.services.models;
 import java.util.Date;
 
 public class Contact {
-	private String nome;
-	private String fone;
-	private String cor;
+
+	private String name;
+	private String phone;
+	private String color;
 	private Date data;
 
 	public Contact() {
-
+		// TODO Auto-generated constructor stub
 	}
 
-	public Contact(String nome, String fone, String cor) {
+	public Contact(String name, String phone, String color) {
 		super();
-		this.nome = nome;
-		this.fone = fone;
-		this.cor = cor;
+		this.name = name;
+		this.phone = phone;
+		this.color = color;
 		this.data = new Date();
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getFone() {
-		return fone;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setFone(String fone) {
-		this.fone = fone;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	public String getCor() {
-		return cor;
+	public String getColor() {
+		return color;
 	}
 
-	public void setCor(String cor) {
-		this.cor = cor;
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	public Date getData() {
