@@ -9,25 +9,25 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.markinster.services.models.Contato;
+import com.markinster.services.models.Contact;
 
-@Path("/contatos")
-public class ContatosService {
+@Path("/contacts")
+public class ContactsService {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getContatos() {
+	public Response getContacts() {
 		
-		List<Contato> contatos = new ArrayList<Contato>();
+		List<Contact> contacts = new ArrayList<Contact>();
 		
-		contatos.add(new Contato("Marcos Soares", "123456789", "blue"));
-		contatos.add(new Contato("Welison", "2355665", "red"));
-		contatos.add(new Contato("Saulo Vieira", "3456", "green"));
-		contatos.add(new Contato("Edil Lopes", "05645", "yellow"));
-		contatos.add(new Contato("Rodrigo dantas", "123456789", "gray"));
+		contacts.add(new Contact("Marcos Soares", "123456789", "blue"));
+		contacts.add(new Contact("Roger", "2355665", "red"));
+		contacts.add(new Contact("Martin Fowler", "3456", "green"));
+		contacts.add(new Contact("Linus Torvals", "05645", "yellow"));
+		contacts.add(new Contact("Ola Bini", "123456789", "gray"));
 		
 		return Response.ok() //200
-				.entity(contatos)
+				.entity(contacts)
 				.header("Access-Control-Allow-Origin", "*")
 				.header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
 				.header("Access-Control-Allow-Headers", "Content-Type")

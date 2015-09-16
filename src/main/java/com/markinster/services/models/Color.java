@@ -1,15 +1,15 @@
 package com.markinster.services.models;
 
-public class Cor {
+public class Color {
 
 	private String id;
 	private String nome;
 
-	public Cor() {
+	public Color() {
 
 	}
 
-	public Cor(String id, String nome) {
+	public Color(String id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;

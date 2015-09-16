@@ -2,17 +2,17 @@ package com.markinster.services.models;
 
 import java.util.Date;
 
-public class Contato {
+public class Contact {
 	private String nome;
 	private String fone;
 	private String cor;
 	private Date data;
 
-	public Contato() {
+	public Contact() {
 
 	}
 
-	public Contato(String nome, String fone, String cor) {
+	public Contact(String nome, String fone, String cor) {
 		super();
 		this.nome = nome;
 		this.fone = fone;
