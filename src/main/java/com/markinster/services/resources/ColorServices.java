@@ -11,11 +11,10 @@ import javax.ws.rs.core.Response;
 import com.markinster.services.models.Color;
 import com.markinster.services.repositories.Colors;
 
-@Path("/tables")
+@Path("/colors")
 public class ColorServices {
 	
 	@GET
-	@Path("/colors")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getColors() {	
 		

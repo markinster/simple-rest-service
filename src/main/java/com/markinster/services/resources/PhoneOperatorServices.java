@@ -11,10 +11,10 @@ import javax.ws.rs.core.Response;
 import com.markinster.services.models.PhoneOperator;
 import com.markinster.services.repositories.Operators;
 
+@Path("/operators")
 public class PhoneOperatorServices {
 	
 	@GET
-	@Path("/operators")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getOperators() {
 		
