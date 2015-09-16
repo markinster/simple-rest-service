@@ -1,6 +1,5 @@
 package com.markinster.services.resources;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -10,6 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.markinster.services.models.PhoneOperator;
+import com.markinster.services.repositories.Operators;
 
 public class PhoneOperatorServices {
 	
@@ -18,13 +18,7 @@ public class PhoneOperatorServices {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getOperators() {
 		
-		List<PhoneOperator> operators = new ArrayList<PhoneOperator>();
-		
-		operators.add(new PhoneOperator("31", "Embratel", "Celular", 1.0));
-		operators.add(new PhoneOperator("14", "Oi", "Celular", 1.5));
-		operators.add(new PhoneOperator("15", "Vivo", "Celular", 1.25));
-		operators.add(new PhoneOperator("41", "Tim", "Celular", 1.75));
-
+		List<PhoneOperator> operators = new Operators().all();
 		
 		return Response.ok() //200
 				.entity(operators)

@@ -30,5 +30,5 @@ public class Color {
 	public void setNome(String name) {
 		this.name = name;
 	}
-
+	
 }
