@@ -11,13 +11,12 @@ import javax.ws.rs.core.Response;
 
 import com.markinster.services.models.PhoneOperator;
 
-@Path("/tables")
 public class PhoneOperatorServices {
 	
 	@GET
-	@Path("/colors")
+	@Path("/operators")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getColors() {
+	public Response getOperators() {
 		
 		List<PhoneOperator> operators = new ArrayList<PhoneOperator>();
 		
