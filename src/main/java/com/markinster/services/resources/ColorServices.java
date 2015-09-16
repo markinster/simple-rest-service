@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 import com.markinster.services.models.Color;
 
 @Path("/tables")
-public class ColorsService {
+public class ColorServices {
 	
 	@GET
 	@Path("/colors")

@@ -12,7 +12,7 @@ import javax.ws.rs.core.Response;
 import com.markinster.services.models.Contact;
 
 @Path("/contacts")
-public class ContactsService {
+public class ContactServices {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
