@@ -7,7 +7,7 @@ import com.markinster.services.models.Contact;
 
 public class Contacts {
 	
-	private List<Contact> contacts;
+	private static List<Contact> contacts;
 
 	public Contacts() {
 		contacts = new ArrayList<Contact>();
@@ -21,6 +21,10 @@ public class Contacts {
 	
 	public List<Contact> all() {
 		return contacts;
+	}
+
+	public void add(Contact contact) {
+		contacts.add(contact);		
 	}
 	
 }
