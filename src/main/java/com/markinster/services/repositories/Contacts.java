@@ -29,7 +29,7 @@ public class Contacts {
 	
 	public Contact byId(int id) {
 		int index = contacts.indexOf(new Contact(id));
-		if (index > 0)
+		if (index >= 0)
 			return contacts.get(index);
 		else
 			return null;
