@@ -46,7 +46,7 @@ public class ContactServices {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getContact(Contact contact) {
+	public Response addContact(Contact contact) {
 
 		try {
 			new Contacts().add(contact);
